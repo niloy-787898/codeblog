@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import Navber from "../component/Navber";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Navber></Navber>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
